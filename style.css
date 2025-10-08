@@ -1,4 +1,5 @@
-/* Font (Google Fonts) */
+/* Nisa Doğa Yücel 220201012 Seng-461 Web Programming with Python and Git
+Font :(i used Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
@@ -11,14 +12,14 @@
   --blue-500:#3b76ff;
   --blue-600:#2a55c5;
   --blue-300:#8fb4ff;
-  --card:#f9fbff;        /* açık kart rengi */
+  --card:#f9fbff;        /* açık mavi  */
   --text:#14203a;        /* koyu metin */
   --muted:#4a5a7a;
   --border:#dfe7ff;
   --chip:#eef3ff;
 }
 
-/* ===== Reset/Body ===== */
+/*Body */
 *{box-sizing:border-box}
 html,body{margin:0}
 body
@@ -33,7 +34,7 @@ body
   background-position: center;
 }
 
-/* ===== Generic ===== */
+/* Generic  */
 .container{width:min(1020px,92%); margin-inline:auto}
 a{color:var(--blue-600); text-decoration:none}
 a:hover{text-decoration:underline}
@@ -85,7 +86,7 @@ h2
   letter-spacing:.2px;
 }
 
-/* ===== Skills ===== */
+/* Skills  */
 .skills{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
 .skills h3{margin:0 0 8px; font-size:15px; color:var(--muted)}
 .chips{list-style:none; padding:0; margin:0; display:flex; gap:8px; flex-wrap:wrap}
@@ -95,7 +96,7 @@ h2
             font-weight:600; font-size:13px;
           }
 
-/* ===== Experience (timeline hissi) ===== */
+/* Experience */
 .xp{display:grid; grid-template-columns: 20px 1fr; gap:10px; margin-bottom:14px}
 .xp-left{position:relative}
 .xp .dot
@@ -114,19 +115,19 @@ h2
 .meta{margin:0 0 6px; color:#5870a0; font-size:14px}
 .xp-right ul{margin:6px 0 0 18px}
 
-/* ===== Certificates ===== */
+/* Certificates  */
 .cert-list{margin:0; padding-left:18px}
 
-/* ===== Contact & Live link ===== */
+/*  Contact & Live link  */
 #contact a{font-weight:600}
 #live-link a{word-break:break-all}
 
-/* ===== Footer ===== */
+/* Footer*/
 .footer{
   padding:18px 0 40px; text-align:center; color:#cfd9ff;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 820px){
   .grid{grid-template-columns:1fr}
   .name{font-size:36px}
