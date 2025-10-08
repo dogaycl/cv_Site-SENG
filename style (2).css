@@ -1,14 +1,15 @@
 /* Font (Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* ===== Theme ===== */
-:root{
+
+:root
+{
   /* Arka plan: görüntü + koyu mavi gradyan overlay */
   --bg-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1600&auto=format&fit=crop'); /* sürreal/renkli bir görsel, istersen değiştir */
   --blue-900:#0b1530;
   --blue-800:#0f1d48;
-  --blue-600:#2a55c5;
   --blue-500:#3b76ff;
+  --blue-600:#2a55c5;
   --blue-300:#8fb4ff;
   --card:#f9fbff;        /* açık kart rengi */
   --text:#14203a;        /* koyu metin */
@@ -20,7 +21,8 @@
 /* ===== Reset/Body ===== */
 *{box-sizing:border-box}
 html,body{margin:0}
-body{
+body
+{
   font:16px/1.7 "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
   background:
@@ -36,34 +38,39 @@ body{
 a{color:var(--blue-600); text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* ===== Hero/Header ===== */
-.hero{
+
+.hero
+{
   position:relative;
   padding:72px 0 56px;
   background:
     radial-gradient(1200px 500px at 60% -10%, rgba(59,118,255,.35), transparent 60%),
     radial-gradient(900px 400px at 10% -20%, rgba(143,180,255,.25), transparent 60%);
 }
-.hero .overlay{
+.hero .overlay
+{
   position:absolute; inset:0;
   background: linear-gradient(180deg, rgba(11,21,48,.55), rgba(11,21,48,.25));
 }
 .hero-content{position:relative; z-index:1; text-align:center}
 .name{
-  margin:0 0 6px; font-size:42px; font-weight:700;
-  color:#fff; letter-spacing:.6px; text-shadow:0 6px 28px rgba(0,0,0,.35);
-}
-.id{
+      margin:0 0 6px; font-size:42px; font-weight:700;
+      color:#fff; letter-spacing:.6px; text-shadow:0 6px 28px rgba(0,0,0,.35);
+      }
+.id
+{
   margin:0; font-size:18px; font-weight:600;
   color:var(--blue-300);
 }
 
-/* ===== Main grid ===== */
-.grid{
+/* Grid */
+.grid
+{
   display:grid; gap:20px; padding:26px 0 34px;
   grid-template-columns: 1fr 1fr;
 }
-.card{
+.card
+{
   background:var(--card);
   border:1px solid var(--border);
   border-radius:16px;
@@ -72,7 +79,8 @@ a:hover{text-decoration:underline}
     0 10px 28px rgba(5,10,25,.18),
     0 1px 0 rgba(255,255,255,.6) inset;
 }
-h2{
+h2
+{
   margin:0 0 12px; font-size:22px; color:var(--blue-600);
   letter-spacing:.2px;
 }
@@ -82,21 +90,23 @@ h2{
 .skills h3{margin:0 0 8px; font-size:15px; color:var(--muted)}
 .chips{list-style:none; padding:0; margin:0; display:flex; gap:8px; flex-wrap:wrap}
 .chips li{
-  padding:6px 12px; border-radius:999px;
-  background:var(--chip); border:1px solid var(--border); color:#1b2a4d;
-  font-weight:600; font-size:13px;
-}
+            padding:6px 12px; border-radius:999px;
+            background:var(--chip); border:1px solid var(--border); color:#1b2a4d;
+            font-weight:600; font-size:13px;
+          }
 
 /* ===== Experience (timeline hissi) ===== */
 .xp{display:grid; grid-template-columns: 20px 1fr; gap:10px; margin-bottom:14px}
 .xp-left{position:relative}
-.xp .dot{
+.xp .dot
+{
   width:10px; height:10px; border-radius:50%;
   background:linear-gradient(135deg, var(--blue-500), var(--blue-300));
   box-shadow:0 0 0 3px #e8efff;
   position:absolute; top:6px; left:4px;
 }
-.xp .line{
+.xp .line
+{
   position:absolute; top:20px; bottom:-8px; left:8px; width:2px; background:#d6e2ff;
 }
 .xp-right h3{margin:0 0 6px; font-size:18px}
